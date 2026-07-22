@@ -1,0 +1,7 @@
+# LaTeX build output
+build/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+
