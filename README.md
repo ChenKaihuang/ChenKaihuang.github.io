@@ -20,8 +20,11 @@ every push to `main`.
 
 ## Update the site
 
-- Website content: `index.html`
+- Homepage: `index.html`
+- Detail pages: `research.html`, `publications.html`, `software.html`, `education.html`
 - Visual design: `assets/styles.css`
+- Menu behavior: `assets/site.js`
+- Standing content and layout preferences: `AGENTS.md`
 - Publication source records: `publications.bib`
 - CV source: `kaihuang_cv.tex`
 - Downloadable CV: `assets/kaihuang-chen-cv.pdf`

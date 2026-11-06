@@ -3,191 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Kaihuang Chen — research in large-scale optimization, operator splitting methods, and GPU-accelerated scientific computing."
-    />
+    <meta name="description" content="Kaihuang Chen — large-scale optimization and GPU-accelerated scientific computing." />
     <meta name="theme-color" content="#f4f1e8" />
-    <meta property="og:title" content="Kaihuang Chen — Applied Mathematics" />
-    <meta
-      property="og:description"
-      content="Research, publications, software, and education."
-    />
+    <meta property="og:title" content="Kaihuang Chen" />
+    <meta property="og:description" content="Kaihuang Chen — large-scale optimization and GPU-accelerated scientific computing." />
     <meta property="og:type" content="website" />
-    <title>Kaihuang Chen — Applied Mathematics &amp; Optimization</title>
+    <title>Kaihuang Chen</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/site.js" defer></script>
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#main">Skip to content</a>
-
     <header class="site-header">
-      <div class="shell nav-wrap">
-        <a class="wordmark" href="#top" aria-label="Kaihuang Chen, home">
+      <div class="shell header-inner">
+        <a class="wordmark" href="index.html" aria-label="Kaihuang Chen, home">
           <span class="wordmark-mark" aria-hidden="true">KC</span>
-          <span>Kaihuang Chen</span>
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#software">Software</a>
-          <a href="#education">Education</a>
-          <a class="nav-cv" href="assets/kaihuang-chen-cv.pdf">CV <span aria-hidden="true">↗</span></a>
-        </nav>
+        <details class="site-menu">
+          <summary class="menu-toggle">Menu <span class="menu-icon" aria-hidden="true"></span></summary>
+          <nav class="menu-panel" aria-label="Primary navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="software.html">Software</a>
+            <a href="education.html">Education</a>
+            <hr />
+            <a href="assets/kaihuang-chen-cv.pdf">CV (PDF) <span aria-hidden="true">↗</span></a>
+          </nav>
+        </details>
       </div>
     </header>
 
-    <main class="shell" id="main">
-      <section class="profile" id="top" aria-labelledby="profile-name">
+    <main class="shell home-main" id="main">
+      <section class="home-intro" aria-labelledby="profile-name">
+        <div class="home-accent" aria-hidden="true"></div>
         <h1 id="profile-name">Kaihuang Chen</h1>
-        <p class="profile-location">Hong Kong SAR, China</p>
-        <p class="profile-bio">
-          I work on large-scale optimization and GPU-accelerated scientific computing. My research
-          focuses on operator splitting methods and algorithm design for linear and quadratic
-          programming. I completed my Ph.D. in Applied Mathematics at The Hong Kong Polytechnic
-          University in February 2026.
-        </p>
-      </section>
-
-      <section class="content-section" id="research" aria-labelledby="research-heading">
-        <h2 id="research-heading">Research interests</h2>
-        <ul class="interest-list">
-          <li>Large-scale convex optimization</li>
-          <li>Linear and quadratic programming</li>
-          <li>Operator splitting methods</li>
-          <li>GPU-accelerated optimization</li>
-          <li>Sparse scientific computing</li>
-          <li>High-performance computing</li>
-        </ul>
-      </section>
-
-      <section class="content-section" id="publications" aria-labelledby="publications-heading">
-        <h2 id="publications-heading">Publications</h2>
-        <div class="publication-groups">
-          <section class="publication-group" aria-labelledby="published-heading">
-            <h3 id="published-heading">Journal &amp; conference papers</h3>
-            <ol class="publication-list">
-              <li class="publication">
-                <span class="publication-year">2026</span>
-                <article aria-labelledby="paper-hprlp">
-                  <h4 id="paper-hprlp">HPR-LP: An implementation of an HPR method for solving linear programming</h4>
-                  <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
-                  <p class="venue"><cite>Mathematical Programming Computation</cite> 18, 183–210</p>
-                  <div class="publication-links">
-                    <a href="https://doi.org/10.1007/s12532-025-00292-0" aria-label="HPR-LP paper">Paper <span aria-hidden="true">↗</span></a>
-                    <a href="https://github.com/PolyU-IOR/HPR-LP" aria-label="HPR-LP code">Code <span aria-hidden="true">↗</span></a>
-                  </div>
-                </article>
-              </li>
-              <li class="publication">
-                <span class="publication-year">2024</span>
-                <article aria-labelledby="paper-collective">
-                  <h4 id="paper-collective">Collective Certified Robustness against Graph Injection Attacks</h4>
-                  <p class="authors">Yuni Lai, Bailin Pan, <strong>Kaihuang Chen</strong>, Yancheng Yuan, Kai Zhou</p>
-                  <p class="venue"><cite>International Conference on Machine Learning (ICML)</cite> · PMLR 235</p>
-                  <div class="publication-links">
-                    <a href="https://proceedings.mlr.press/v235/lai24a.html" aria-label="Collective certified robustness paper">Paper <span aria-hidden="true">↗</span></a>
-                  </div>
-                </article>
-              </li>
-            </ol>
-          </section>
-
-          <section class="publication-group" aria-labelledby="preprints-heading">
-            <h3 id="preprints-heading">Preprints</h3>
-            <ol class="publication-list">
-              <li class="publication">
-                <span class="publication-year">2025</span>
-                <article aria-labelledby="paper-gpu-methods">
-                  <h4 id="paper-gpu-methods">On the Relationships among GPU-Accelerated First-Order Methods for Solving Linear Programming</h4>
-                  <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
-                  <p class="venue">arXiv:2509.23903</p>
-                  <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2509.23903" aria-label="GPU-accelerated first-order methods paper">Paper <span aria-hidden="true">↗</span></a>
-                  </div>
-                </article>
-              </li>
-              <li class="publication">
-                <span class="publication-year">2025</span>
-                <article aria-labelledby="paper-hprqp">
-                  <h4 id="paper-hprqp">HPR-QP: A dual Halpern–Peaceman–Rachford method for solving large-scale convex composite quadratic programming</h4>
-                  <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
-                  <p class="venue">arXiv:2507.02470</p>
-                  <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2507.02470" aria-label="HPR-QP paper">Paper <span aria-hidden="true">↗</span></a>
-                    <a href="https://github.com/PolyU-IOR/HPR-QP" aria-label="HPR-QP code">Code <span aria-hidden="true">↗</span></a>
-                  </div>
-                </article>
-              </li>
-              <li class="publication">
-                <span class="publication-year">2025</span>
-                <article aria-labelledby="paper-prs">
-                  <h4 id="paper-prs">Peaceman-Rachford Splitting Method Converges Ergodically for Solving Convex Optimization Problems</h4>
-                  <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
-                  <p class="venue">arXiv:2501.07807</p>
-                  <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2501.07807" aria-label="Peaceman-Rachford splitting paper">Paper <span aria-hidden="true">↗</span></a>
-                  </div>
-                </article>
-              </li>
-            </ol>
-          </section>
-        </div>
-      </section>
-
-      <section class="content-section" id="software" aria-labelledby="software-heading">
-        <h2 id="software-heading">Software</h2>
-        <div class="software-list">
-          <article class="software-entry" aria-labelledby="software-hprlp">
-            <div>
-              <h3 id="software-hprlp">HPR-LP</h3>
-              <dl>
-                <div><dt>Problem</dt><dd>Large-scale linear programming</dd></div>
-                <div><dt>Method</dt><dd>Halpern–Peaceman–Rachford splitting</dd></div>
-              </dl>
-            </div>
-            <a class="repository-link" href="https://github.com/PolyU-IOR/HPR-LP" aria-label="HPR-LP repository">GitHub <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="software-entry" aria-labelledby="software-hprqp">
-            <div>
-              <h3 id="software-hprqp">HPR-QP</h3>
-              <dl>
-                <div><dt>Problem</dt><dd>Large-scale convex composite quadratic programming</dd></div>
-                <div><dt>Method</dt><dd>Dual Halpern–Peaceman–Rachford splitting</dd></div>
-              </dl>
-            </div>
-            <a class="repository-link" href="https://github.com/PolyU-IOR/HPR-QP" aria-label="HPR-QP repository">GitHub <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section" id="education" aria-labelledby="education-heading">
-        <h2 id="education-heading">Education</h2>
-        <div class="education-list">
-          <article class="education-entry">
-            <div>
-              <h3>Ph.D. in Applied Mathematics</h3>
-              <p>The Hong Kong Polytechnic University</p>
-              <p class="department">Department of Applied Mathematics</p>
-            </div>
-            <p class="education-dates"><time datetime="2020-09">Sep 2020</time> – <time datetime="2026-02">Feb 2026</time></p>
-          </article>
-          <article class="education-entry">
-            <div>
-              <h3>B.Sc. in Information and Computing Science</h3>
-              <p>Hunan University</p>
-              <p class="department">School of Mathematics</p>
-            </div>
-            <p class="education-dates"><time datetime="2016-09">Sep 2016</time> – <time datetime="2020-06">Jun 2020</time></p>
-          </article>
-        </div>
+        <p>I develop algorithms for large-scale optimization, with a focus on GPU-accelerated computing.</p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <span>Kaihuang Chen</span>
-        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        <span>Hong Kong</span>
       </div>
     </footer>
   </body>

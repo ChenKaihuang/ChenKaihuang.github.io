@@ -5,7 +5,11 @@ GitHub Pages serves `index.html` and `assets/` from the root of `main`.
 
 ## Content and layout preferences
 
-- Use a compact academic layout with plain section headings and a consistent reading order.
+- Keep the homepage a simple personal landing page: name, a short introduction, and location.
+- Put detailed research, publications, software, and education on separate pages, accessible through
+  a single Menu button in the top-right corner. Do not turn the homepage back into a CV or a list of
+  academic sections.
+- Use plain headings and a clear reading order on detail pages.
 - Do not add slogans, taglines, decorative captions, section teasers, or small commentary sentences
   above or below topic headings. The owner explicitly requested their removal and does not want
   them added in future edits.
@@ -19,6 +23,7 @@ GitHub Pages serves `index.html` and `assets/` from the root of `main`.
 
 ## Maintenance
 
-- Website content: `index.html`; styling: `assets/styles.css`.
+- Homepage: `index.html`; details: `research.html`, `publications.html`, `software.html`, `education.html`.
+- Styling: `assets/styles.css`; menu behavior and old section-link redirects: `assets/site.js`.
 - Preserve `.vscode/` and other unrelated user files.
 - Preview at desktop and mobile widths when changing layout. Check internal links and the CV asset.
