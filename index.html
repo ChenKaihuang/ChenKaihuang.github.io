@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Kaihuang Chen is an applied mathematician working on large-scale optimization, operator splitting methods, and GPU-accelerated scientific computing."
+      content="Kaihuang Chen — research in large-scale optimization, operator splitting methods, and GPU-accelerated scientific computing."
     />
     <meta name="theme-color" content="#f4f1e8" />
     <meta property="og:title" content="Kaihuang Chen — Applied Mathematics" />
     <meta
       property="og:description"
-      content="Research in large-scale optimization and GPU-accelerated scientific computing."
+      content="Research, publications, software, and education."
     />
     <meta property="og:type" content="website" />
     <title>Kaihuang Chen — Applied Mathematics &amp; Optimization</title>
@@ -31,281 +31,162 @@
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#software">Software</a>
-          <a href="#background">Background</a>
+          <a href="#education">Education</a>
+          <a class="nav-cv" href="assets/kaihuang-chen-cv.pdf">CV <span aria-hidden="true">↗</span></a>
         </nav>
-        <a class="nav-cv" href="assets/kaihuang-chen-cv.pdf">CV <span aria-hidden="true">↗</span></a>
       </div>
     </header>
 
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow"><span></span> Applied mathematician · Hong Kong</p>
-            <h1>Optimization methods<br />built for <em>scale.</em></h1>
-            <p class="hero-intro">
-              I design algorithms and GPU implementations for large-scale linear and quadratic
-              programming, connecting rigorous optimization theory with high-performance scientific
-              computing.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#publications">Explore my research</a>
-              <a class="button button-secondary" href="assets/kaihuang-chen-cv.pdf">Download CV</a>
-            </div>
-          </div>
+    <main class="shell" id="main">
+      <section class="profile" id="top" aria-labelledby="profile-name">
+        <h1 id="profile-name">Kaihuang Chen</h1>
+        <p class="profile-location">Hong Kong SAR, China</p>
+        <p class="profile-bio">
+          I work on large-scale optimization and GPU-accelerated scientific computing. My research
+          focuses on operator splitting methods and algorithm design for linear and quadratic
+          programming. I completed my Ph.D. in Applied Mathematics at The Hong Kong Polytechnic
+          University in February 2026.
+        </p>
+      </section>
 
-          <div class="hero-visual" aria-label="Abstract visualization of an optimization landscape">
-            <svg viewBox="0 0 560 560" role="img" aria-labelledby="visual-title visual-desc">
-              <title id="visual-title">Optimization landscape</title>
-              <desc id="visual-desc">
-                Nested contours converge toward a solution point over a computational grid.
-              </desc>
-              <defs>
-                <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#163b46" />
-                  <stop offset="1" stop-color="#0d252e" />
-                </linearGradient>
-                <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-                  <path d="M34 0H0V34" fill="none" stroke="#f5f0e6" stroke-opacity=".09" />
-                </pattern>
-              </defs>
-              <rect width="560" height="560" rx="18" fill="url(#surface)" />
-              <rect width="560" height="560" rx="18" fill="url(#grid)" />
-              <g fill="none" stroke="#c4f05a" stroke-width="2">
-                <ellipse cx="307" cy="276" rx="202" ry="137" transform="rotate(-27 307 276)" opacity=".2" />
-                <ellipse cx="307" cy="276" rx="158" ry="104" transform="rotate(-27 307 276)" opacity=".36" />
-                <ellipse cx="307" cy="276" rx="112" ry="72" transform="rotate(-27 307 276)" opacity=".58" />
-                <ellipse cx="307" cy="276" rx="65" ry="39" transform="rotate(-27 307 276)" opacity=".9" />
-              </g>
-              <path
-                d="M86 450C154 416 176 373 215 365c44-9 41 43 85 18 30-17 24-74 55-91 26-15 50 14 80-23 20-25 26-68 38-102"
-                fill="none"
-                stroke="#f4f1e8"
-                stroke-width="3"
-                stroke-dasharray="7 10"
-                opacity=".86"
-              />
-              <g fill="#f4f1e8">
-                <circle cx="86" cy="450" r="5" />
-                <circle cx="215" cy="365" r="5" />
-                <circle cx="300" cy="383" r="5" />
-                <circle cx="355" cy="292" r="5" />
-              </g>
-              <circle cx="407" cy="231" r="13" fill="#c4f05a" />
-              <circle cx="407" cy="231" r="24" fill="none" stroke="#c4f05a" stroke-opacity=".36" />
-              <text x="46" y="61" fill="#f4f1e8" font-family="ui-monospace, monospace" font-size="13" opacity=".7">min  f(x)</text>
-              <text x="46" y="84" fill="#f4f1e8" font-family="ui-monospace, monospace" font-size="13" opacity=".7">s.t. Ax = b</text>
-              <text x="448" y="501" fill="#c4f05a" font-family="ui-monospace, monospace" font-size="12">x*</text>
-            </svg>
-            <p class="visual-caption"><span>01</span> Theory, implementation, and numerical experiments</p>
-          </div>
+      <section class="content-section" id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research interests</h2>
+        <ul class="interest-list">
+          <li>Large-scale convex optimization</li>
+          <li>Linear and quadratic programming</li>
+          <li>Operator splitting methods</li>
+          <li>GPU-accelerated optimization</li>
+          <li>Sparse scientific computing</li>
+          <li>High-performance computing</li>
+        </ul>
+      </section>
+
+      <section class="content-section" id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <div class="publication-groups">
+          <section class="publication-group" aria-labelledby="published-heading">
+            <h3 id="published-heading">Journal &amp; conference papers</h3>
+            <ol class="publication-list">
+              <li class="publication">
+                <span class="publication-year">2026</span>
+                <article aria-labelledby="paper-hprlp">
+                  <h4 id="paper-hprlp">HPR-LP: An implementation of an HPR method for solving linear programming</h4>
+                  <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
+                  <p class="venue"><cite>Mathematical Programming Computation</cite> 18, 183–210</p>
+                  <div class="publication-links">
+                    <a href="https://doi.org/10.1007/s12532-025-00292-0" aria-label="HPR-LP paper">Paper <span aria-hidden="true">↗</span></a>
+                    <a href="https://github.com/PolyU-IOR/HPR-LP" aria-label="HPR-LP code">Code <span aria-hidden="true">↗</span></a>
+                  </div>
+                </article>
+              </li>
+              <li class="publication">
+                <span class="publication-year">2024</span>
+                <article aria-labelledby="paper-collective">
+                  <h4 id="paper-collective">Collective Certified Robustness against Graph Injection Attacks</h4>
+                  <p class="authors">Yuni Lai, Bailin Pan, <strong>Kaihuang Chen</strong>, Yancheng Yuan, Kai Zhou</p>
+                  <p class="venue"><cite>International Conference on Machine Learning (ICML)</cite> · PMLR 235</p>
+                  <div class="publication-links">
+                    <a href="https://proceedings.mlr.press/v235/lai24a.html" aria-label="Collective certified robustness paper">Paper <span aria-hidden="true">↗</span></a>
+                  </div>
+                </article>
+              </li>
+            </ol>
+          </section>
+
+          <section class="publication-group" aria-labelledby="preprints-heading">
+            <h3 id="preprints-heading">Preprints</h3>
+            <ol class="publication-list">
+              <li class="publication">
+                <span class="publication-year">2025</span>
+                <article aria-labelledby="paper-gpu-methods">
+                  <h4 id="paper-gpu-methods">On the Relationships among GPU-Accelerated First-Order Methods for Solving Linear Programming</h4>
+                  <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
+                  <p class="venue">arXiv:2509.23903</p>
+                  <div class="publication-links">
+                    <a href="https://arxiv.org/abs/2509.23903" aria-label="GPU-accelerated first-order methods paper">Paper <span aria-hidden="true">↗</span></a>
+                  </div>
+                </article>
+              </li>
+              <li class="publication">
+                <span class="publication-year">2025</span>
+                <article aria-labelledby="paper-hprqp">
+                  <h4 id="paper-hprqp">HPR-QP: A dual Halpern–Peaceman–Rachford method for solving large-scale convex composite quadratic programming</h4>
+                  <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
+                  <p class="venue">arXiv:2507.02470</p>
+                  <div class="publication-links">
+                    <a href="https://arxiv.org/abs/2507.02470" aria-label="HPR-QP paper">Paper <span aria-hidden="true">↗</span></a>
+                    <a href="https://github.com/PolyU-IOR/HPR-QP" aria-label="HPR-QP code">Code <span aria-hidden="true">↗</span></a>
+                  </div>
+                </article>
+              </li>
+              <li class="publication">
+                <span class="publication-year">2025</span>
+                <article aria-labelledby="paper-prs">
+                  <h4 id="paper-prs">Peaceman-Rachford Splitting Method Converges Ergodically for Solving Convex Optimization Problems</h4>
+                  <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
+                  <p class="venue">arXiv:2501.07807</p>
+                  <div class="publication-links">
+                    <a href="https://arxiv.org/abs/2501.07807" aria-label="Peaceman-Rachford splitting paper">Paper <span aria-hidden="true">↗</span></a>
+                  </div>
+                </article>
+              </li>
+            </ol>
+          </section>
         </div>
       </section>
 
-      <section class="section research-section" id="research">
-        <div class="shell section-grid">
-          <div class="section-heading">
-            <p class="section-index">01 / Research</p>
-            <h2>From convergence theory to computational scale.</h2>
-          </div>
-          <div class="research-content">
-            <p class="lead">
-              My doctoral research focuses on scalable algorithms for large optimization models,
-              with an emphasis on operator splitting methods and modern GPU architectures.
-            </p>
-            <div class="focus-grid">
-              <article>
-                <span class="focus-number">01</span>
-                <h3>Numerical optimization</h3>
-                <p>First-order and operator splitting methods for linear, quadratic, and convex optimization.</p>
-              </article>
-              <article>
-                <span class="focus-number">02</span>
-                <h3>GPU computing</h3>
-                <p>High-throughput implementations designed for large sparse instances and stringent tolerances.</p>
-              </article>
-              <article>
-                <span class="focus-number">03</span>
-                <h3>Scalable solvers</h3>
-                <p>Open software and careful benchmarking that connect theoretical advances to practical performance.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section publications-section" id="publications">
-        <div class="shell">
-          <div class="section-heading split-heading">
+      <section class="content-section" id="software" aria-labelledby="software-heading">
+        <h2 id="software-heading">Software</h2>
+        <div class="software-list">
+          <article class="software-entry" aria-labelledby="software-hprlp">
             <div>
-              <p class="section-index">02 / Publications</p>
-              <h2>Selected work</h2>
+              <h3 id="software-hprlp">HPR-LP</h3>
+              <dl>
+                <div><dt>Problem</dt><dd>Large-scale linear programming</dd></div>
+                <div><dt>Method</dt><dd>Halpern–Peaceman–Rachford splitting</dd></div>
+              </dl>
             </div>
-            <p>Linear and quadratic programming, splitting methods, and certified robustness.</p>
-          </div>
-
-          <ol class="publication-list">
-            <li class="publication">
-              <div class="publication-year">2026</div>
-              <div class="publication-body">
-                <div class="publication-meta"><span>Journal article</span><span>Mathematical Programming Computation 18</span></div>
-                <h3>HPR-LP: An implementation of an HPR method for solving linear programming</h3>
-                <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
-                <div class="publication-links">
-                  <a href="https://doi.org/10.1007/s12532-025-00292-0">Paper <span aria-hidden="true">↗</span></a>
-                  <a href="https://github.com/PolyU-IOR/HPR-LP">Code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </li>
-
-            <li class="publication">
-              <div class="publication-year">2025</div>
-              <div class="publication-body">
-                <div class="publication-meta"><span>Preprint</span><span>arXiv:2509.23903</span></div>
-                <h3>On the Relationships among GPU-Accelerated First-Order Methods for Solving Linear Programming</h3>
-                <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
-                <div class="publication-links">
-                  <a href="https://arxiv.org/abs/2509.23903">Paper <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </li>
-
-            <li class="publication">
-              <div class="publication-year">2025</div>
-              <div class="publication-body">
-                <div class="publication-meta"><span>Preprint</span><span>arXiv:2507.02470</span></div>
-                <h3>HPR-QP: A dual Halpern–Peaceman–Rachford method for solving large-scale convex composite quadratic programming</h3>
-                <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
-                <div class="publication-links">
-                  <a href="https://arxiv.org/abs/2507.02470">Paper <span aria-hidden="true">↗</span></a>
-                  <a href="https://github.com/PolyU-IOR/HPR-QP">Code <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </li>
-
-            <li class="publication">
-              <div class="publication-year">2025</div>
-              <div class="publication-body">
-                <div class="publication-meta"><span>Preprint</span><span>arXiv:2501.07807</span></div>
-                <h3>Peaceman-Rachford Splitting Method Converges Ergodically for Solving Convex Optimization Problems</h3>
-                <p class="authors"><strong>Kaihuang Chen</strong>, Defeng Sun, Yancheng Yuan, Guojun Zhang, Xinyuan Zhao</p>
-                <div class="publication-links">
-                  <a href="https://arxiv.org/abs/2501.07807">Paper <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </li>
-
-            <li class="publication">
-              <div class="publication-year">2024</div>
-              <div class="publication-body">
-                <div class="publication-meta"><span>Conference</span><span>ICML 2024 · PMLR 235</span></div>
-                <h3>Collective Certified Robustness against Graph Injection Attacks</h3>
-                <p class="authors">Yuni Lai, Bailin Pan, <strong>Kaihuang Chen</strong>, Yancheng Yuan, Kai Zhou</p>
-                <div class="publication-links">
-                  <a href="https://proceedings.mlr.press/v235/lai24a.html">Paper <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section software-section" id="software">
-        <div class="shell">
-          <div class="section-heading split-heading light-heading">
+            <a class="repository-link" href="https://github.com/PolyU-IOR/HPR-LP" aria-label="HPR-LP repository">GitHub <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="software-entry" aria-labelledby="software-hprqp">
             <div>
-              <p class="section-index">03 / Software</p>
-              <h2>Research, made executable.</h2>
+              <h3 id="software-hprqp">HPR-QP</h3>
+              <dl>
+                <div><dt>Problem</dt><dd>Large-scale convex composite quadratic programming</dd></div>
+                <div><dt>Method</dt><dd>Dual Halpern–Peaceman–Rachford splitting</dd></div>
+              </dl>
             </div>
-            <p>Open-source Julia and CUDA implementations for large-scale optimization experiments.</p>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-topline"><span>Linear programming</span><span>Julia · GPU</span></div>
-              <h3>HPR-LP</h3>
-              <p>
-                A GPU solver for large-scale linear programs, pairing a Halpern–Peaceman–Rachford
-                method with adaptive restart and penalty parameter updates.
-              </p>
-              <ul>
-                <li>Large sparse LP instances</li>
-                <li>Large-scale benchmark suite</li>
-                <li>High-accuracy numerical experiments</li>
-              </ul>
-              <a class="project-link" href="https://github.com/PolyU-IOR/HPR-LP">
-                View repository <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-
-            <article class="project-card project-card-accent">
-              <div class="project-topline"><span>Quadratic programming</span><span>Julia · CUDA</span></div>
-              <h3>HPR-QP</h3>
-              <p>
-                A dual HPR framework for large-scale convex composite quadratic programming,
-                designed around efficient range-space updates and GPU scalability.
-              </p>
-              <ul>
-                <li>Restricted Wolfe dual formulation</li>
-                <li>Adaptive practical enhancements</li>
-                <li>Scalable sparse computation</li>
-              </ul>
-              <a class="project-link" href="https://github.com/PolyU-IOR/HPR-QP">
-                View repository <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-          </div>
+            <a class="repository-link" href="https://github.com/PolyU-IOR/HPR-QP" aria-label="HPR-QP repository">GitHub <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
       </section>
 
-      <section class="section background-section" id="background">
-        <div class="shell section-grid">
-          <div class="section-heading">
-            <p class="section-index">04 / Background</p>
-            <h2>Mathematics with a computational point of view.</h2>
-          </div>
-          <div>
-            <div class="timeline">
-              <article>
-                <div class="timeline-year">2020—2026</div>
-                <div>
-                  <h3>Ph.D. in Applied Mathematics</h3>
-                  <p>The Hong Kong Polytechnic University</p>
-                  <span>Department of Applied Mathematics</span>
-                </div>
-              </article>
-              <article>
-                <div class="timeline-year">2016—2020</div>
-                <div>
-                  <h3>B.Sc. in Information and Computing Science</h3>
-                  <p>Hunan University</p>
-                  <span>School of Mathematics</span>
-                </div>
-              </article>
+      <section class="content-section" id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="education-list">
+          <article class="education-entry">
+            <div>
+              <h3>Ph.D. in Applied Mathematics</h3>
+              <p>The Hong Kong Polytechnic University</p>
+              <p class="department">Department of Applied Mathematics</p>
             </div>
-
-            <div class="skills-block">
-              <div>
-                <h3>Methods &amp; domains</h3>
-                <p>LP · QP · operator splitting · sparse linear algebra · GPU computing</p>
-              </div>
+            <p class="education-dates"><time datetime="2020-09">Sep 2020</time> – <time datetime="2026-02">Feb 2026</time></p>
+          </article>
+          <article class="education-entry">
+            <div>
+              <h3>B.Sc. in Information and Computing Science</h3>
+              <p>Hunan University</p>
+              <p class="department">School of Mathematics</p>
             </div>
-          </div>
+            <p class="education-dates"><time datetime="2016-09">Sep 2016</time> – <time datetime="2020-06">Jun 2020</time></p>
+          </article>
         </div>
       </section>
-
     </main>
 
     <footer class="site-footer">
-      <div class="shell footer-grid">
-        <div>
-          <strong>Kaihuang Chen</strong>
-          <p>Large-scale optimization &amp; GPU scientific computing</p>
-        </div>
-        <div class="footer-location">
-          <span>Based in</span>
-          <p>Hong Kong SAR, China</p>
-        </div>
+      <div class="shell footer-inner">
+        <span>Kaihuang Chen</span>
         <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
