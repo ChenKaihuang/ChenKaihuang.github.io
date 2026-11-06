@@ -6,6 +6,8 @@ GitHub Pages serves `index.html` and `assets/` from the root of `main`.
 ## Content and layout preferences
 
 - Keep the homepage a simple personal landing page: name, a short introduction, and location.
+- The homepage can include one interactive optimization figure reflecting the owner's research.
+  Keep its controls compact and its visible labels functional; do not add commentary around it.
 - Put detailed research, publications, software, and education on separate pages, accessible through
   a single Menu button in the top-right corner. Do not turn the homepage back into a CV or a list of
   academic sections.
@@ -25,5 +27,6 @@ GitHub Pages serves `index.html` and `assets/` from the root of `main`.
 
 - Homepage: `index.html`; details: `research.html`, `publications.html`, `software.html`, `education.html`.
 - Styling: `assets/styles.css`; menu behavior and old section-link redirects: `assets/site.js`.
+- Interactive quadratic optimization figure and its mathematical model: `assets/optimization.mjs`.
 - Preserve `.vscode/` and other unrelated user files.
 - Preview at desktop and mobile widths when changing layout. Check internal links and the CV asset.

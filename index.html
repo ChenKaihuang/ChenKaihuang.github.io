@@ -10,8 +10,9 @@
     <meta property="og:type" content="website" />
     <title>Kaihuang Chen</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/styles.css?v=optimization-1" />
     <script src="assets/site.js" defer></script>
+    <script type="module" src="assets/optimization.mjs"></script>
   </head>
   <body class="home-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -37,9 +38,51 @@
 
     <main class="shell home-main" id="main">
       <section class="home-intro" aria-labelledby="profile-name">
-        <div class="home-accent" aria-hidden="true"></div>
         <h1 id="profile-name">Kaihuang Chen</h1>
         <p>I develop algorithms for large-scale optimization, with a focus on GPU-accelerated computing.</p>
+      </section>
+      <section class="optimization-demo" data-optimization-demo aria-label="Interactive optimization" aria-describedby="optimization-instructions">
+        <div class="optimization-toolbar">
+          <span class="optimization-method">Halpern–PR</span>
+          <div class="optimization-controls">
+            <output data-counter aria-hidden="true">k = 320</output>
+            <button class="optimization-replay" type="button" data-replay disabled>Replay <span aria-hidden="true">↻</span></button>
+          </div>
+        </div>
+        <div class="optimization-stage">
+          <svg class="optimization-plot" viewBox="0 0 520 480" role="img" aria-labelledby="optimization-title optimization-description">
+            <title id="optimization-title">Constrained quadratic optimization</title>
+            <desc id="optimization-description">Elliptical objective contours, a shaded feasible set, and the shadow iterates of Halpern Peaceman–Rachford splitting.</desc>
+            <defs>
+              <clipPath id="optimization-clip"><rect data-clip width="520" height="480" /></clipPath>
+            </defs>
+            <g clip-path="url(#optimization-clip)">
+              <polygon class="optimization-feasible" data-feasible points="100.00,353.33 273.33,383.33 416.67,300.00 400.00,133.33 186.67,96.67 100.00,193.33" />
+              <g class="optimization-contours" data-contours>
+                <ellipse cx="446.67" cy="150.00" rx="36.67" ry="12.96" transform="rotate(24.06 446.67 150.00)" />
+                <ellipse cx="446.67" cy="150.00" rx="88.67" ry="31.35" transform="rotate(24.06 446.67 150.00)" />
+                <ellipse cx="446.67" cy="150.00" rx="140.67" ry="49.73" transform="rotate(24.06 446.67 150.00)" />
+                <ellipse cx="446.67" cy="150.00" rx="192.67" ry="68.12" transform="rotate(24.06 446.67 150.00)" />
+                <ellipse cx="446.67" cy="150.00" rx="244.67" ry="86.50" transform="rotate(24.06 446.67 150.00)" />
+                <ellipse cx="446.67" cy="150.00" rx="296.67" ry="104.89" transform="rotate(24.06 446.67 150.00)" />
+              </g>
+              <path class="optimization-trajectory" data-trajectory d="M126.67,163.33 L256.47,186.27 L326.22,188.40 L334.62,173.68 L350.53,168.22 L357.25,162.26 L363.82,158.56 L368.08,155.38 L371.71,153.00 L374.49,151.03 L376.82,149.44 L378.74,148.10 L380.38,146.96 L381.78,145.99 L383.00,145.15 L384.06,144.41 L385.00,143.76 L385.83,143.18 L386.58,142.66 L387.25,142.19 L387.86,141.77 L388.41,141.39 L388.91,141.04 L389.37,140.72 L389.80,140.42 L390.19,140.15 L390.55,139.90 L390.89,139.66 L391.21,139.44 L391.50,139.24 L391.77,139.05 L392.03,138.87 L392.27,138.70 L392.50,138.54 L392.71,138.40 L393.11,138.12 L394.80,136.95 L395.82,136.24 L396.51,135.76 L397.00,135.42 L397.37,135.16 L397.66,134.96 L397.89,134.80 L398.08,134.67 L398.24,134.56 L398.38,134.46 L398.49,134.38 L398.59,134.31 L398.68,134.25 L398.76,134.20 L398.82,134.15 L398.89,134.11 L398.94,134.07 L398.99,134.03 L399.04,134.00 L399.08,133.97 L399.12,133.95 L399.15,133.92 L399.19,133.90 L399.21,133.89" />
+              <circle class="optimization-minimum" data-minimum cx="400.00" cy="133.33" r="4.5" />
+              <circle class="optimization-start" data-start-dot cx="126.67" cy="163.33" r="6" />
+              <path class="optimization-target" data-target-cross d="M440.67,150.00h12 M446.67,144.00v12" />
+              <circle class="optimization-iterate" data-iterate cx="399.21" cy="133.89" r="4" />
+            </g>
+            <g class="optimization-labels" aria-hidden="true">
+              <text data-start-label x="112.67" y="187.33" text-anchor="end">Start</text>
+              <text data-target-label x="432.67" y="120.00" text-anchor="end">Target</text>
+              <text data-minimum-label x="388.00" y="157.33" text-anchor="end">x*</text>
+            </g>
+          </svg>
+          <button class="optimization-handle" data-handle="start" type="button" aria-label="Starting point" aria-describedby="optimization-instructions" disabled hidden></button>
+          <button class="optimization-handle" data-handle="target" type="button" aria-label="Objective center" aria-describedby="optimization-instructions" disabled hidden></button>
+        </div>
+        <p class="sr-only" id="optimization-instructions">Drag Start or Target to change the problem. With either point focused, use arrow keys to move it; Shift moves in larger steps. Click the plot to choose a starting point. Replay runs the iteration again.</p>
+        <span class="sr-only" data-status role="status"></span>
       </section>
     </main>
 
